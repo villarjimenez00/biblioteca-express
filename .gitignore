@@ -1,0 +1,65 @@
+# ==========================================
+# SECRETOS Y CREDENCIALES (¡Crítico!)
+# ==========================================
+*.env
+*.env.local
+*.env.*.local
+*.pem
+*.key
+*.cert
+*.pfx
+*.pkcs12
+secrets.yaml
+secrets.json
+id_rsa*
+*.tfvars
+*.tfstate
+*.tfstate.*
+!*.tfstate.backup
+
+# ==========================================
+# TERRAFORM / OPENTOFU
+# ==========================================
+.terraform/
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*.override.tf
+*.override.tf.json
+
+# ==========================================
+# ANSIBLE
+# ==========================================
+*.retry
+vault_pass.txt
+
+# ==========================================
+# DOCKER & KUBERNETES
+# ==========================================
+.docker/
+kubeconfig
+*.kubeconfig
+helm-chart*.tgz
+
+# ==========================================
+# ARCHIVOS DE LOGS Y TEMPORALES
+# ==========================================
+*.log
+*.tmp
+*.temp
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# SISTEMA OPERATIVO Y EDITORES
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
